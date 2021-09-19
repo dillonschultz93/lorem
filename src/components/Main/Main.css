@@ -1,0 +1,11 @@
+main {
+  height: calc((100vh - 77px) - 5rem);
+  margin-top: 5rem;
+}
+
+@media (max-width: 425px) {
+  main {
+    height: calc(100vh);
+    margin-top: 2.5rem;
+  }
+}
