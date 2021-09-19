@@ -1,0 +1,46 @@
+.results-area {
+  padding: 1rem;
+  height: calc((40rem - 77px) - 5rem - 68px);
+  overflow-y: scroll;
+}
+
+.results-area h4:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.bottom-area {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  border-radius: 0 0 0.25rem 0.25rem;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.input-section {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 425px) {
+  .results-area {
+    height: calc((50vh - 2.5rem) - 112px);
+  }
+
+  .bottom-area {
+    flex-direction: column;
+  }
+
+  .input-section {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .input-section div {
+    flex-grow: 1;
+  }
+
+  .input-section button {
+    width: 100%;
+  }
+}

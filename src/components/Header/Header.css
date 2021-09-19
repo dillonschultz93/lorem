@@ -1,0 +1,47 @@
+:root {
+  --light-bg: rgb(249, 249, 249, 0.8);
+  --dark-bg: rgb(103, 108, 114, 0.8);
+  --border-color-light: #ECEDEE;
+  --border-color-dark: #85898E;
+}
+
+.header {
+  backdrop-filter: blur(30px);
+  border-bottom: 1px solid transparent;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.header-light {
+  background-color: var(--light-bg);
+  border-bottom-color: var(--border-color-light);
+}
+
+.header-dark {
+  background-color: var(--dark-bg);
+  border-bottom-color: var(--border-color-dark);
+}
+
+.theme-switch {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+}
+
+.theme-switch svg {
+  margin-left: 0.5rem;
+}
+
+.theme-switch-light {
+  background-color: #ECEDEE;
+}
+
+.theme-switch-dark {
+  background-color: #393F47;
+}
